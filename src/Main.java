@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         Employee employee1 = new Employee("Петров Даниил Александрович", 1, 25500);
@@ -18,22 +19,26 @@ public class Main {
         System.out.println("Ф.И.О. " + employee5.getFIO());
 
     }
-    private static Employee[] employees = new Employee[4];{
-        employees[0] = new Employee("Fam1 Name1 SName1", 1, 25500),
-                employees[1] = new Employee("Fam2 Name2 SName2", 2, 31450),
-                employees[2] = new Employee("Fam3 Name3 SName3", 3, 40200),
-                employees[3] = new Employee("Fam4 Name4 SName4", 4, 34900),
-                employees[4] = new Employee("Fam5 Name5 SName5", 5, 52400),
-    } for (Employee e: empl) {
-        System.out.println(e);
+
+    private static Employee[] employees = new Employee[4];
+
+    {
+        employees[0] = new Employee("Fam1 Name1 SName1", 1, 25500);
+                employees[1] = new Employee("Fam2 Name2 SName2", 2, 31450);
+                employees[2] = new Employee("Fam3 Name3 SName3", 3, 40200);
+                employees[3] = new Employee("Fam4 Name4 SName4", 4, 34900);
+                employees[4] = new Employee("Fam5 Name5 SName5", 5, 52400);
+    }
 
     public static void sumSalarys() {
         Employee[] employees = new Employee[4];
         int sum = 0;
-        for (Employee i : employees) sum += i;
+        for (Employee i : employees) {
+            sum += i;
         }
         System.out.println( "Сумма затрат на зарплаты в месяц " + sum);
     }
+
 
     public static void minMuxSalary() {
         Employee[] employees = new Employee[4];

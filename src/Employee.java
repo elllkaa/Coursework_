@@ -18,7 +18,7 @@ public class Employee {
         fIO = fio;
         department = dept;
         salary = salary;
-        id = ++Counter;
+        id = ++counter;
     }
 
     @Override
@@ -28,4 +28,5 @@ public class Employee {
     public String toStringFio () {
         return "Ф.И.О" + fIO;
     }
+    
 
