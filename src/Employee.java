@@ -10,14 +10,14 @@ public class Employee {
     public int getDepartment() { return this.department; }
     public float getSalary() { return this.salary; }
 
-    public void SetFIO(String fio) { this.fIO = fio; }
-    public void SetDepartment(int dept) { this.department = dept; }
-    public void SetSalary(float sal) { this.salary = sal; }
+    public void SetFIO() {this.fIO = fIO; }
+    public void SetDepartment() {this.department = department; }
+    public void SetSalary() {this.salary = salary;}
 
-    public Employee(String fio, int dept, float salary) {
-        fIO = fio;
-        department = dept;
-        salary = salary;
+    public Employee(String fIO, int department, float salary) {
+        this.fIO = fIO;
+        this.department = department;
+        this.salary = salary;
         id = ++counter;
     }
 

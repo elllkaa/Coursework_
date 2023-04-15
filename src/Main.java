@@ -19,19 +19,17 @@ public class Main {
         System.out.println("Ф.И.О. " + employee5.getFIO());
 
     }
-
-    private static Employee[] employees = new Employee[4];
-
+    private static final Employee[] employees = new Employee[4];
     {
         employees[0] = new Employee("Fam1 Name1 SName1", 1, 25500);
-                employees[1] = new Employee("Fam2 Name2 SName2", 2, 31450);
-                employees[2] = new Employee("Fam3 Name3 SName3", 3, 40200);
-                employees[3] = new Employee("Fam4 Name4 SName4", 4, 34900);
-                employees[4] = new Employee("Fam5 Name5 SName5", 5, 52400);
+        employees[1] = new Employee("Fam2 Name2 SName2", 2, 31450);
+        employees[2] = new Employee("Fam3 Name3 SName3", 3, 40200);
+        employees[3] = new Employee("Fam4 Name4 SName4", 4, 34900);
+        employees[4] = new Employee("Fam5 Name5 SName5", 5, 52400);
     }
 
+
     public static void sumSalarys() {
-        Employee[] employees = new Employee[4];
         int sum = 0;
         for (Employee i : employees) {
             sum += i;
@@ -41,7 +39,6 @@ public class Main {
 
 
     public static void minMuxSalary() {
-        Employee[] employees = new Employee[4];
         var maxSalary = employees[0];
         Employee minSalary = employees[0];
         for (Employee val : employees) {
@@ -57,7 +54,6 @@ public class Main {
     }
 
     public static void averageSalary() {
-        Employee[] employees = new Employee[4];
         int sum = 0;
         for (Employee i : employees) sum = sum + i;
         sum = sum / employees.length;
